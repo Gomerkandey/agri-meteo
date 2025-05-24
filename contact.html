@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="contact">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="side-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Contact</h1>
+      <p>
+        Pour toute question, suggestion ou collaboration, contactez notre équipe
+        :
+      </p>
+      <ul>
+        <li><strong>Téléphone :</strong> +243 972 572 280</li>
+        <li><strong>Email :</strong> agrimeteo@email.com</li>
+        <li><strong>Adresse :</strong> Lubumbashi, RDC</li>
+      </ul>
+    </main>
+    <script>
+      function toggleMenu() {
+        document.getElementById("side-menu").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

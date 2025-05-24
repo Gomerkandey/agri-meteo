@@ -1,0 +1,121 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="apropos">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="side-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1><strong>À PROPOS D'AGRI-METEO</strong></h1>
+      <p class="textpropos">
+        Le projet Agri-Météo s'inscrit dans une démarche innovante visant à
+        renforcer la résilience du secteur agricole face aux aléas climatiques.
+        Il s'agit d'une application web légère et intuitive, destinée à fournir
+        aux agriculteurs des informations météorologiques localisées, fiables et
+        en temps réel, essentielles à la planification et à la gestion
+        quotidienne des activités agricoles. Dans un contexte de changement
+        climatique croissant, la maîtrise des données environnementales devient
+        un enjeu stratégique pour la durabilité des exploitations agricoles. En
+        exploitant l’API d’OpenWeather, Agri-Météo permet une visualisation
+        dynamique des données (température etc.), facilitant ainsi des prises de
+        décisions plus éclairées et mieux adaptées aux conditions du terrain. Ce
+        projet met en valeur l'intersection entre *technologie, agriculture
+        intelligente et données météorologiques. Il répond à un besoin concret :
+        accompagner les acteurs du monde rural dans la transition vers une
+        agriculture plus précise, plus efficace et plus résiliente.
+      </p>
+
+      <h2>Contributeurs</h2>
+      <div class="contributors">
+        <div class="person">
+          <img src="Faustin.jpg" alt="Photo 1" />
+          <p>
+            <strong>FAUSTIN BATUNANGA</strong>- <em>Dev Frontend Senior</em>
+          </p>
+        </div>
+        <div class="person">
+          <img src="freddy.jpg" alt="Photo 2" />
+          <p><strong>FREDDY KASONGO</strong>- <em>Engineer DevSecOps</em></p>
+        </div>
+        <div class="person">
+          <img src="obed.jpg" alt="Photo 3" />
+          <p><strong>OBED WATSHIKA</strong> - <em>Dev Frontend junior</em></p>
+        </div>
+        <div class="person">
+          <img src="elisée.jpg" alt="Photo 4" />
+          <p><strong>ELISEE NGUNDU </strong> - <em>Test Engineer</em></p>
+        </div>
+        <div class="person">
+          <img src="GOMER.jpg" alt="Photo 5" />
+          <p><strong>GOMER KHANDEY</strong>- <em>Software Architect</em></p>
+        </div>
+        <div class="person">
+          <img src="JEAN.jpg" alt="Photo 6" />
+          <p><strong>JOHAN NGOY </strong>- <em>Chef de projet</em></p>
+        </div>
+      </div>
+    </main>
+    <script>
+      function toggleMenu() {
+        document.getElementById("side-menu").classList.toggle("show");
+      }
+    </script>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Logo et description -->
+        <div class="footer-logo">
+          <img src="agri meteo.jpg" alt="Agri-Météo" class="logo" />
+          <p>Agri-Météo<br /><span>Prévoir, planifier, produire.</span></p>
+        </div>
+
+        <!-- Liens de navigation -->
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Infos légales -->
+        <div class="footer-info">
+          <h4>Informations légales</h4>
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="footer-social">
+          <h4>Suivez-nous</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Agri-Météo. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>

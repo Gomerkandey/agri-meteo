@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte Météo Agricole</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <header class="topbarlogo">
+      <h1 class="titre-centre">AGRI-METÉO</h1>
+      <img src="agri meteo.jpg" alt="Logo" class="logo-droite" />
+    </header>
+
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <nav id="side-menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>
+        <em>Bienvenue sur notre plateforme</em>
+      </h1>
+      <h3>La metéo fiable au service de votre agriculture</h3>
+
+      <p id="date"></p>
+      <input type="text" id="cityInput" placeholder="Entrez une ville..." />
+      <button onclick="getWeather()">Afficher la météo</button>
+
+      <div id="map" style="height: 300px; margin-top: 20px"></div>
+
+      <div id="weatherDisplay">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="weatherIcon"></p>
+      </div>
+
+      <section id="adviceSection">
+        <h3><strong>Conseil météo du jour</strong></h3>
+        <div id="adviceBox" class="advice-box">
+          <p id="adviceIcon"></p>
+          <p id="adviceText"></p>
+        </div>
+      </section>
+
+      <div id="forecast"></div>
+    </main>
+    <script>
+      function toggleMenu() {
+        document.getElementById("side-menu").classList.toggle("show");
+      }
+    </script>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Logo et description -->
+        <div class="footer-logo">
+          <img src="agri meteo.jpg" alt="Agri-Météo" class="logo" />
+          <p>Agri-Météo<br /><span>Prévoir, planifier, produire.</span></p>
+        </div>
+
+        <!-- Liens de navigation -->
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html">Accueil</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Infos légales -->
+        <div class="footer-info">
+          <h4>Informations légales</h4>
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="footer-social">
+          <h4>Suivez-nous</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Agri-Météo. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
