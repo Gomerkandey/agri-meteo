@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gomerkandey.github.io/agri-meteo/index.html</loc>;
@@ -10,7 +11,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gomerkandey.github.io/agri-meteo/à propos.html</loc>;
+    <loc>https://gomerkandey.github.io/agri-meteo/apropos.html</loc>;
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
